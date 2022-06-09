@@ -1,6 +1,6 @@
 package Assignment_3;
 
-public abstract class RtTriangle extends Shape {
+public class RtTriangle extends Shape {
 	private double Side_A;
 	private double Side_B;
 	private double Side_C;
@@ -12,13 +12,13 @@ public abstract class RtTriangle extends Shape {
 		this.Side_C=Side_A;
 	}
 
-	public double getArea() {
+	public double area() {
 		double sqrt = (Side_A+Side_B+Side_C)/2;
 		return Math.sqrt(sqrt*(sqrt-Side_A)*(sqrt-Side_B)*(sqrt-Side_C));
 		
 	}
 
-	public double getPerimeter() {
+	public double perimeter() {
 		double perimeter=(Side_A*Side_B*Side_C)/2;		
 		return perimeter;
 	}
